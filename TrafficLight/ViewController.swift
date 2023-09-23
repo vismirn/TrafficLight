@@ -8,11 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var redView: UILabel!
-    @IBOutlet weak var yellowView: UILabel!
-    @IBOutlet weak var greenView: UILabel!
+
+    @IBOutlet weak var redView: UIView!
+    @IBOutlet weak var yellowView: UIView!
+    @IBOutlet weak var greenView: UIView!
     @IBOutlet weak var startButtonOutlet: UIButton!
-    
     let alphaLet = 0.30000001192092896
     
     override func viewDidLoad() {
