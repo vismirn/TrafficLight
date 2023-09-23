@@ -14,7 +14,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        redLabel.isHidden = true
+        yellowLabel.isHidden = true
+        greenLabel.isHidden = true
+//        greetingButton.configuration = setupButton(with: "Show Greeting")
     }
     
     @IBAction func startButton() {
