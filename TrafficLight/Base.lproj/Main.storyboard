@@ -66,7 +66,7 @@
                                     <color key="titleShadowColor" systemColor="linkColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="startButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="pJs-bM-mud"/>
+                                    <action selector="startButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="axN-sE-z3F"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -86,9 +86,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="greenLabel" destination="Tsq-Ah-Ktd" id="3ja-1j-VqT"/>
-                        <outlet property="redLabel" destination="LnO-aQ-ghM" id="c8t-rB-ke3"/>
-                        <outlet property="yellowLabel" destination="cLX-6I-Sfi" id="VD6-Wf-Gwh"/>
+                        <outlet property="greenView" destination="Tsq-Ah-Ktd" id="3ja-1j-VqT"/>
+                        <outlet property="redView" destination="LnO-aQ-ghM" id="c8t-rB-ke3"/>
+                        <outlet property="startButtonOutlet" destination="rmo-ei-alQ" id="zny-sC-6cz"/>
+                        <outlet property="yellowView" destination="cLX-6I-Sfi" id="VD6-Wf-Gwh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

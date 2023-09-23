@@ -8,20 +8,49 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var redLabel: UILabel!
-    @IBOutlet weak var yellowLabel: UILabel!
-    @IBOutlet weak var greenLabel: UILabel!
+    @IBOutlet weak var redView: UILabel!
+    @IBOutlet weak var yellowView: UILabel!
+    @IBOutlet weak var greenView: UILabel!
+    @IBOutlet weak var startButtonOutlet: UIButton!
+    
+    let alphaLet = 0.30000001192092896
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        redLabel.isHidden = true
-//        yellowLabel.isHidden = true
-//        greenLabel.isHidden = true
-//        greetingButton.configuration = setupButton(with: "Show Greeting")
+        redView.alpha = alphaLet
+        redView.layer.masksToBounds = true
+        redView.layer.cornerRadius = 75
+        yellowView.alpha = alphaLet
+        yellowView.layer.masksToBounds = true
+        yellowView.layer.cornerRadius = 75
+        greenView.alpha = alphaLet
+        greenView.layer.masksToBounds = true
+        greenView.layer.cornerRadius = 75
+    }
+    @IBAction func startButton() {
+        startButtonOutlet.setTitle("NEXT", for: .normal)
+        if redView.alpha == 1 {
+            redView.alpha = alphaLet
+            yellowView.alpha = 1
+            greenView.alpha = alphaLet
+        } else if yellowView.alpha == 1 {
+            redView.alpha = alphaLet
+            yellowView.alpha = alphaLet
+            greenView.alpha = 1
+        } else {
+            redView.alpha = 1
+            yellowView.alpha = alphaLet
+            greenView.alpha = alphaLet
+        }
     }
     
-    @IBAction func startButton() {
-    }
+    
+//    private func setupButton(with title: String) -> UIButton.Configuration {
+//        var buttonConfiguration = UIButton.Configuration.gray()
+////        buttonConfiguration.title = title
+//        return buttonConfiguration
+//    }
+
     
 
 }
