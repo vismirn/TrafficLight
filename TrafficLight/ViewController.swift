@@ -19,13 +19,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         redView.alpha = alphaLet
         redView.layer.masksToBounds = true
-        redView.layer.cornerRadius = 75
+        redView.layer.cornerRadius = 55
         yellowView.alpha = alphaLet
         yellowView.layer.masksToBounds = true
-        yellowView.layer.cornerRadius = 75
+        yellowView.layer.cornerRadius = 55
         greenView.alpha = alphaLet
         greenView.layer.masksToBounds = true
-        greenView.layer.cornerRadius = 75
+        greenView.layer.cornerRadius = 55
     }
     @IBAction func startButton() {
         startButtonOutlet.setTitle("NEXT", for: .normal)
