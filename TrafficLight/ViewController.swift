@@ -7,25 +7,27 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
     @IBOutlet weak var redView: UIView!
     @IBOutlet weak var yellowView: UIView!
     @IBOutlet weak var greenView: UIView!
     @IBOutlet weak var startButtonOutlet: UIButton!
-    let alphaLet = 0.30000001192092896
+    private let alphaLet = 0.30000001192092896
     
     override func viewDidLoad() {
         super.viewDidLoad()
         redView.alpha = alphaLet
         redView.layer.masksToBounds = true
-        redView.layer.cornerRadius = 55
+        redView.layer.cornerRadius = redView.frame.width / 2
+        
         yellowView.alpha = alphaLet
         yellowView.layer.masksToBounds = true
-        yellowView.layer.cornerRadius = 55
+        yellowView.layer.cornerRadius = yellowView.frame.width / 2
+        
         greenView.alpha = alphaLet
         greenView.layer.masksToBounds = true
-        greenView.layer.cornerRadius = 55
+        greenView.layer.cornerRadius = greenView.frame.width / 2
     }
     @IBAction func startButton() {
         startButtonOutlet.setTitle("NEXT", for: .normal)

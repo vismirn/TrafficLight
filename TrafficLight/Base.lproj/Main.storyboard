@@ -34,14 +34,14 @@
                                     <action selector="startButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="axN-sE-z3F"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="DVC-1W-491">
-                                <rect key="frame" x="141" y="75" width="110" height="396"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="DVC-1W-491">
+                                <rect key="frame" x="132.5" y="75" width="110" height="396"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e90-TE-dgI">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="110" id="LbU-ol-QdA"/>
+                                            <constraint firstAttribute="width" secondItem="e90-TE-dgI" secondAttribute="height" multiplier="1:1" id="frV-vC-ddz"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCo-wg-bHm">
@@ -53,23 +53,17 @@
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="QCo-wg-bHm" firstAttribute="height" secondItem="pE0-kl-2Zm" secondAttribute="height" id="8rw-KU-hiJ"/>
-                                    <constraint firstItem="QCo-wg-bHm" firstAttribute="top" secondItem="e90-TE-dgI" secondAttribute="bottom" constant="33" id="IJI-sD-80P"/>
-                                    <constraint firstItem="e90-TE-dgI" firstAttribute="height" secondItem="QCo-wg-bHm" secondAttribute="height" id="QWl-8a-l4Z"/>
-                                    <constraint firstItem="pE0-kl-2Zm" firstAttribute="top" secondItem="QCo-wg-bHm" secondAttribute="bottom" constant="33" id="vyf-KG-cZ3"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DVC-1W-491" secondAttribute="trailing" constant="124" id="7OS-i7-wHp"/>
+                            <constraint firstItem="DVC-1W-491" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="19K-ln-IpJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rmo-ei-alQ" secondAttribute="bottom" constant="32" id="LL2-mF-omA"/>
-                            <constraint firstItem="DVC-1W-491" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="PKO-Is-RkN"/>
+                            <constraint firstItem="DVC-1W-491" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.293333" id="Rd8-Fj-rod"/>
                             <constraint firstItem="rmo-ei-alQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="Wsu-LM-Sye"/>
                             <constraint firstItem="DVC-1W-491" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="iQX-BA-XpJ"/>
-                            <constraint firstItem="rmo-ei-alQ" firstAttribute="top" secondItem="DVC-1W-491" secondAttribute="bottom" constant="116" id="kR7-IP-TPF"/>
+                            <constraint firstItem="DVC-1W-491" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.593703" id="pml-EE-J11"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rmo-ei-alQ" secondAttribute="trailing" constant="90" id="wCJ-ND-hEw"/>
                         </constraints>
                     </view>
